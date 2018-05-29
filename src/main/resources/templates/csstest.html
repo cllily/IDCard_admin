@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>javascript测试</title>
+
+
+</head>
+<body>
+<button onclick="fun()"></button>
+<p id="pid">sssssssssss</p>
+<p id="pid1">sssssssssss</p>
+<p id="pid2">sssssssssss</p>
+
+
+
+<script>
+
+  var txt = "<p>"+navigator.appCodeName+"</p>";
+        txt += "<p>"+navigator.appName+"</p>";
+        txt += "<p>"+navigator.appVersion+"</p>";
+        txt += "<p>"+navigator.cookieEnabled+"</p>";
+        txt += "<p>"+navigator.platform+"</p>";
+        txt += "<p>"+navigator.userAgent+"</p>";
+        txt += "<p>"+navigator.systemLanguage+"</p>";
+     document.write(txt);
+     var x=confirm("sss");
+     prompt("sssssssssssssssssssssssssssssssss");
+
+</script>
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--<meta charset="UTF-8"/>-->
+<!--<title>上传身份证</title>-->
+<!--<script  src="js/jquery-3.1.1.min.js"></script>-->
+<!--<script src="/static/js/jquery-3.1.1.min.js"></script>-->
+
+<!--</head>-->
+<!--<body>-->
+<!--<div>-->
+<!--&lt;!&ndash;first col &ndash;&gt;-->
+<!--&lt;!&ndash;<h1 id="web_name">loan system</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;right login part &ndash;&gt;-->
+<!--&lt;!&ndash;<h1 align="center">请上传身份证</h1>&ndash;&gt;-->
+<!--<div id="ID_F_Div">-->
+<!--<img id="ID_F_img" aria-hidden="true" />-->
+<!--<input type="file" id="ID_F" accept="image/*"/>-->
+<!--</div>-->
+
+
+<!--<div id="ID_B_DIV">-->
+<!--<img id="ID_B_img" aria-hidden="true" />-->
+<!--<input type="file" id="ID_B" accept="image/*"/>-->
+<!--</div>-->
+<!--<button id="ID_button" onclick="f()">确认上传</button>-->
+<!--<p id="ID_Info"></p>-->
+
+
+
+<!--</div>-->
+<!--<script>-->
+<!--$("#ID_F").bind("input peopertychange",function () {-->
+
+<!--var files=$("#ID_F").get(0);-->
+<!--//  alert("changed");-->
+<!--if(files.length==0){-->
+<!--alert(files.length);-->
+<!--return;-->
+<!--}-->
+
+<!--var reader=new FileReader();-->
+<!--reader.onload=function (ev) {-->
+<!--var filestring=ev.target.toString();-->
+<!--var date={};-->
+<!--date.filename=filestring;-->
+<!--$.post("/getimage",file).success(-->
+<!--function () {-->
+<!--alert("success");-->
+<!--}-->
+<!--)-->
+<!--}-->
+
+
+
+<!--})-->
+
+
+
+
+
+
+<!--</script>-->
+
+
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8"/>-->
+    <!--<title>上传身份证</title>-->
+    <!--<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>-->
+    <!--<script type="text/javascript" src="js/jquery.form.js"></script>-->
+    <!--<script type="text/javascript" src="bootstrap-4.1.1-dist/css/bootstrap.min.css"></script>-->
+
+    <!--&lt;!&ndash;<script type="text/javascript" src="/static/js/jquery-3.1.1.min.js"></script>&ndash;&gt;-->
+    <!--<style>-->
+        <!--img{-->
+            <!--height: 180px;-->
+            <!--top: 180px;-->
+
+
+        <!--}-->
+        <!--.left{-->
+
+            <!--width:190px;-->
+
+            <!--height:500px;-->
+
+            <!--background-color:#9F3;-->
+
+            <!--position:absolute;-->
+
+            <!--left:100px;-->
+
+            <!--top:0px;-->
+
+        <!--}-->
+
+        <!--.right{-->
+
+            <!--width:190px;-->
+
+            <!--height:500px;-->
+
+            <!--background-color:#9F9;-->
+
+            <!--position:absolute;-->
+
+            <!--right:0px;-->
+
+            <!--top:0px;-->
+
+        <!--}-->
+
+    <!--</style>-->
+
+
+<!--</head>-->
+<!--<body>-->
+
+<!--<form method="post"   enctype="multipart/form-data"  onsubmit="false" id="form"   target="iframeContent" >-->
+
+
+
+
+    <!--<table align="center" style="table-layout: fixed">-->
+        <!--<tr>-->
+            <!--<td>-->
+                <!--<img id="id_card_image"  />-->
+            <!--</td>-->
+            <!--<td>-->
+                <!--<p/>-->
+            <!--</td>-->
+        <!--</tr>-->
+        <!--<tr>-->
+            <!--<td >-->
+                <!--<input type="file" name ="file"   id="file" onchange="fun(this)" value="上传身份证"/>-->
+            <!--</td>-->
+            <!--<td>-->
+                <!--<input type="submit" value="识别" id="submit" />-->
+            <!--</td>-->
+        <!--</tr>-->
+    <!--</table>-->
+<!--</form>-->
+<!--&lt;!&ndash;<form method="post"   enctype="multipart/form-data"  onsubmit="false" id="form"   target="iframeContent" >&ndash;&gt;-->
+
+<!--&lt;!&ndash;<img id="id_card_image"  />&ndash;&gt;-->
+
+<!--&lt;!&ndash;<input type="file" name ="file" id="file" onchange="fun(this)" value="上传身份证"/>&ndash;&gt;-->
+<!--&lt;!&ndash;<input type="submit" value="识别" id="submit"/>&ndash;&gt;-->
+<!--&lt;!&ndash;<p></p>&ndash;&gt;-->
+
+<!--&lt;!&ndash;</form>&ndash;&gt;-->
+
+
+<!--<script>-->
+
+    <!--function fun(file) {-->
+        <!--var thisfile=file.files[0];-->
+        <!--if(thisfile.type.toString().indexOf("image")==-1){-->
+            <!--alert("所选文件不是图片格式");-->
+            <!--return;-->
+        <!--}-->
+        <!--var  size=parseInt(thisfile.size.toString());-->
+        <!--alert(size);-->
+        <!--if((size>1024*1024)||(48*48>size)){-->
+            <!--alert("图片大小不正确");-->
+        <!--}else{-->
+            <!--alert("合适");-->
+        <!--}-->
+        <!--//-->
+
+        <!--// }-->
+        <!--// alert(thisfile.size);-->
+        <!--//   alert(thisfile.name);-->
+        <!--//alert(thisfile.type.toString().indexOf("image"));-->
+
+        <!--document.getElementById('id_card_image').src = window.URL.createObjectURL(file.files[0]);-->
+    <!--};-->
+
+
+    <!--$("#submit").click(function () {-->
+        <!--var form = $("form#form");-->
+        <!--var options = {-->
+            <!--url: "/getimage",-->
+            <!--success: function (data) {-->
+                <!--showinfo(data);-->
+            <!--}-->
+        <!--}-->
+        <!--form.ajaxForm(options);-->
+    <!--});-->
+
+
+    <!--function showinfo(data) {-->
+
+        <!--var str = "";-->
+        <!--var name = data.name;-->
+        <!--var gender = data.gender;-->
+        <!--var adress = data.adress;-->
+        <!--var side = data.side;-->
+        <!--var id_card_number = data.id_card_number;-->
+        <!--var race = data.race;-->
+        <!--var type = data.type;-->
+        <!--var birthday = data.birthday;-->
+        <!--var issued_by = data.issued_by;-->
+        <!--var valid_day = data.valid_day;-->
+        <!--if (side == "front") {-->
+            <!--str += "<h3>身份证正面照</h3>";-->
+
+            <!--//str+="<p style='font-style: normal'>姓名:</p> <p style='font-style: italic'>"+name+"</p><br/>";-->
+            <!--str+="<p >姓名:"+name+"</p>";-->
+            <!--str+="<p >性别:"+gender+"</p>";-->
+            <!--str+="<p >民族:"+race+"</p>";-->
+            <!--str+="<p >出生年月日:"+birthday+"</p>";-->
+            <!--str+="<p >身份证号:"+id_card_number+"</p>";-->
+            <!--str+="<p >住址:"+adress+"</p>";-->
+
+
+        <!--} else if (side == "back") {-->
+            <!--str+="<h3>身份证反面照</h3><br/>";-->
+            <!--str+="<p>颁发单位:"+issued_by+"</p>";-->
+            <!--str+="<p >有效期限:"+valid_day+"</p>";-->
+
+            <!--//     str+="<p  style='font-style=normal'>颁发单位:</p><p style='font-style=italic'>"+issued_by+"</p><br/>";-->
+            <!--//    str+="<p  style='font-style=normal'>有效期:</p><p style='font-style=italic'>"+valid_day+"</p><br/>";-->
+        <!--} else {-->
+            <!--alert("未能检测");-->
+        <!--}-->
+        <!--// str+="<p  style='font-style=normal'>姓名:</p><p style='font-style=italic'>"+name+"</p><br/>";-->
+        <!--// str += name + "<br/>" + gender + "<br/>" + adress + "<br/>" + side + "<br/>" + id_card_number + "<br/>" + race + "<br/>" + type + "<br/>" + birthday + "<br/>" + issued_by + "<br/>" + valid_day;-->
+        <!--//alert(str);-->
+        <!--// alert(str);-->
+        <!--$("p").html(str);-->
+
+
+    <!--};-->
+
+
+<!--</script>-->
+
+
+<!--</body>-->
+
+<!--</html>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--&lt;!&ndash;<!DOCTYPE html>&ndash;&gt;-->
+<!--&lt;!&ndash;<html lang="en">&ndash;&gt;-->
+<!--&lt;!&ndash;<head>&ndash;&gt;-->
+<!--&lt;!&ndash;<meta charset="UTF-8"/>&ndash;&gt;-->
+<!--&lt;!&ndash;<title>上传身份证</title>&ndash;&gt;-->
+<!--&lt;!&ndash;<script  src="js/jquery-3.1.1.min.js"></script>&ndash;&gt;-->
+<!--&lt;!&ndash;<script src="/static/js/jquery-3.1.1.min.js"></script>&ndash;&gt;-->
+
+<!--&lt;!&ndash;</head>&ndash;&gt;-->
+<!--&lt;!&ndash;<body>&ndash;&gt;-->
+<!--&lt;!&ndash;<div>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;first col &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;<h1 id="web_name">loan system</h1>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;right login part &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;<h1 align="center">请上传身份证</h1>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;<div id="ID_F_Div">&ndash;&gt;-->
+<!--&lt;!&ndash;<img id="ID_F_img" aria-hidden="true" />&ndash;&gt;-->
+<!--&lt;!&ndash;<input type="file" id="ID_F" accept="image/*"/>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;<div id="ID_B_DIV">&ndash;&gt;-->
+<!--&lt;!&ndash;<img id="ID_B_img" aria-hidden="true" />&ndash;&gt;-->
+<!--&lt;!&ndash;<input type="file" id="ID_B" accept="image/*"/>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<button id="ID_button" onclick="f()">确认上传</button>&ndash;&gt;-->
+<!--&lt;!&ndash;<p id="ID_Info"></p>&ndash;&gt;-->
+
+
+
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--&lt;!&ndash;<script>&ndash;&gt;-->
+<!--&lt;!&ndash;$("#ID_F").bind("input peopertychange",function () {&ndash;&gt;-->
+
+<!--&lt;!&ndash;var files=$("#ID_F").get(0);&ndash;&gt;-->
+<!--&lt;!&ndash;//  alert("changed");&ndash;&gt;-->
+<!--&lt;!&ndash;if(files.length==0){&ndash;&gt;-->
+<!--&lt;!&ndash;alert(files.length);&ndash;&gt;-->
+<!--&lt;!&ndash;return;&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+
+<!--&lt;!&ndash;var reader=new FileReader();&ndash;&gt;-->
+<!--&lt;!&ndash;reader.onload=function (ev) {&ndash;&gt;-->
+<!--&lt;!&ndash;var filestring=ev.target.toString();&ndash;&gt;-->
+<!--&lt;!&ndash;var date={};&ndash;&gt;-->
+<!--&lt;!&ndash;date.filename=filestring;&ndash;&gt;-->
+<!--&lt;!&ndash;$.post("/getimage",file).success(&ndash;&gt;-->
+<!--&lt;!&ndash;function () {&ndash;&gt;-->
+<!--&lt;!&ndash;alert("success");&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+<!--&lt;!&ndash;)&ndash;&gt;-->
+<!--&lt;!&ndash;}&ndash;&gt;-->
+
+
+
+<!--&lt;!&ndash;})&ndash;&gt;-->
+
+
+
+
+
+
+<!--&lt;!&ndash;</script>&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;</body>&ndash;&gt;-->
+<!--&lt;!&ndash;</html>&ndash;&gt;-->

@@ -1,0 +1,8 @@
+
+#right_sign_part{
+    background: aquamarine;
+    scroll-snap-margin-block-start: 100px;
+    border-length: 50px;
+
+}
+
